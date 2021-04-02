@@ -4,11 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "copy:readme": "cp ./README.md ./projects/ngx-long-click",
     "build": "npm run build:lib && npm run build:demo",
-    "build:lib": "ng build ngx-long-click --prod",
-    "build:demo": "ng build demo --prod --base-href='https://tylder.github.io/ngx-long-click/' && angular-cli-ghpages --branch gh-pages",
+    "build:lib": "npm run copy:readme && ng build ngx-long-click --prod",
+    "build:demo": "ng build demo --prod",
     "publish:lib": "npm publish --dir=./dist/ngx-long-click",
-    "publish:demo": "npx angular-cli-ghpages --dir=./dist/demo --no-silent",
+    "publish:demo": "npx angular-cli-ghpages --dir=./dist/demo",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -23,7 +24,6 @@
     "@angular/platform-browser": "~11.1.2",
     "@angular/platform-browser-dynamic": "~11.1.2",
     "@angular/router": "~11.1.2",
-    "test-lib123123": "0.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

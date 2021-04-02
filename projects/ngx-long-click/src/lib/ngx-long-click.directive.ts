@@ -6,10 +6,10 @@ import {delay, repeat, takeUntil, tap} from 'rxjs/operators';
   // tslint:disable-next-line:directive-selector
   selector: '[longClick]'
 })
-export class LongClickDirective implements AfterViewInit{
+export class NgxLongClickDirective implements AfterViewInit{
 
-  @Input() clickDelayMs = 500;
-  @Output('longClick') longClick = new EventEmitter<MouseEvent | TouchEvent>();
+  @Input() clickDelayMs = 500; /* 0.5s default */
+  @Output() longClick = new EventEmitter<MouseEvent | TouchEvent>();
 
   mouseDown$: Observable<any>;
   mouseUp$: Observable<any>;
@@ -26,13 +26,9 @@ export class LongClickDirective implements AfterViewInit{
     this.touchEnd$ = fromEvent(this.hostElement.nativeElement, 'touchend');
 
     merge(this.mouseDown$, this.touchStart$).pipe(
-      // tap(() => console.log('DOWN')),
-      // tap((val) => console.log(val)),
       delay(this.clickDelayMs),
       takeUntil(merge(this.mouseUp$, this.touchEnd$)),
       repeat(),
-      // tap((val) => console.log(val)),
-      // tap(() => console.log('long click')),
     ).subscribe(val => this.longClick.emit(val));
   }
 

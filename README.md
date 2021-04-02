@@ -5,21 +5,23 @@ Angular directive for detecting long clicks of an element in Angular 2 and up.
 It is as simple as:
 
 ```html
-<div longClick $event)"></div>
+<div (longClick)="onLongClick($event)></div>
 ```
 
-It internally uses `ResizeSensor` from [CSS Element Queries](https://github.com/marcj/css-element-queries).
+## Demo
 
-## Playground
+[Demo](https://tylder.github.io/ngx-long-click/)
 
-[StackBlitz playground](https://stackblitz.com/edit/angular-resize-event-playground?file=src/app/app.component.html)
+or 
+
+`npm run start` to run a local demo
 
 ## Using the library
 
 Import the library in any Angular application by running:
 
 ```bash
-$ npm install ngx-long-click
+$ npm install ngx-long-click --save
 ```
 
 and then from your Angular `AppModule`:
@@ -30,7 +32,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import the library module
-import {NgxLongClickModule} from './ngx-long-click.module';
+import {NgxLongClickModule} from 'ngx-long-click';
 
 @NgModule({
   declarations: [
@@ -54,22 +56,10 @@ Once your library is imported, you can use its `longClick` directive in your Ang
 <div (longClick)="onLongClick($event)"></div>
 ```
 
-```typescript
-import { Component } from '@angular/core';
+`clickDelayMs` specifies the time in milliseconds the element need to be pressed before the event is fired 
 
-// Import the resized event model
-import { ResizedEvent } from 'angular-resize-event';
-
-@Component({...})
-class MyComponent {
-  width: number;
-  height: number;
-
-  onResized(event: ResizedEvent) {
-    this.width = event.newWidth;
-    this.height = event.newHeight;
-  }
-}
+```html
+<div (longClick)="onLongClick($event)" clickDelayMs="1000">Press for 1 sec</div>
 ```
 
 ## License

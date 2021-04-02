@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import {LongClickDirective} from './long-click.directive';
+import {NgxLongClickDirective} from './ngx-long-click.directive';
 
 
 
 @NgModule({
-  declarations: [LongClickDirective],
+  declarations: [NgxLongClickDirective],
   imports: [
   ],
-  exports: [LongClickDirective]
+  exports: [NgxLongClickDirective]
 })
 export class NgxLongClickModule { }

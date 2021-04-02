@@ -1,12 +1,13 @@
+<h1>Ngx Long Click Demo</h1>
 
-<lib-test-lib></lib-test-lib>
+<button (click)="onNormalClick($event)"
+        [style]="{background: colors[btn1ColorIndex]}">Normal Button</button>
 
-<!--<button (longClick)="onLongClickReleaseBtn1($event)"-->
-<!--        [style]="{background: colors[btn1ColorIndex]}">Press Me at least 0.5s</button>-->
+<button (longClick)="onLongClickReleaseBtn2($event)"
+        [style]="{background: colors[btn2ColorIndex]}">Press Me for 0.5s</button>
 
-<!--<button (longClick)="onLongClickReleaseBtn2($event)"-->
-<!--        [clickDelayMs]="1000"-->
-<!--        [style]="{background: colors[btn2ColorIndex]}">Press Me at least 1s</button>-->
+<button (longClick)="onLongClickReleaseBtn3($event)"
+        clickDelayMs="250"
+        [style]="{background: colors[btn3ColorIndex]}">Press Me for 0.25s</button>
 
-<!--<button (click)="onNormalClick($event)"-->
-<!--        [style]="{background: colors[btn3ColorIndex]}">Normal Button</button>-->
+

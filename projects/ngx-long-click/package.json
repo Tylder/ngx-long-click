@@ -1,12 +1,12 @@
 {
   "name": "ngx-long-click",
-  "version": "0.0.2",
+  "version": "0.0.11",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tylder/ngx-long-click/tree/master/projects/ngx-long-click"
+    "url": "https://github.com/Tylder/ngx-long-click/"
   },
-  "homepage": "https://github.com/Tylder/ngx-long-click/tree/master/projects/ngx-long-click",
+  "homepage": "https://tylder.github.io/ngx-long-click/",
   "author": {
     "name": "Daniel Lofgren",
     "email": "lofgrendaniel@hotmail.com"
