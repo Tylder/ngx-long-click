@@ -12,29 +12,6 @@ module.exports = __webpack_require__(/*! C:\Programming\web\ng\libraries\ngx-lon
 
 /***/ }),
 
-/***/ "5d/s":
-/*!******************************************************************!*\
-  !*** ./projects/ngx-long-click/src/lib/ngx-long-click.module.ts ***!
-  \******************************************************************/
-/*! exports provided: NgxLongClickModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgxLongClickModule", function() { return NgxLongClickModule; });
-/* harmony import */ var _long_click_directive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./long-click.directive */ "kt2x");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-
-class NgxLongClickModule {
-}
-NgxLongClickModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NgxLongClickModule });
-NgxLongClickModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NgxLongClickModule_Factory(t) { return new (t || NgxLongClickModule)(); }, imports: [[]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NgxLongClickModule, { declarations: [_long_click_directive__WEBPACK_IMPORTED_MODULE_0__["LongClickDirective"]], exports: [_long_click_directive__WEBPACK_IMPORTED_MODULE_0__["LongClickDirective"]] }); })();
-
-
-/***/ }),
-
 /***/ "H5HQ":
 /*!*********************************************!*\
   !*** ./projects/demo/src/app/app.module.ts ***!
@@ -47,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ "NO+I");
-/* harmony import */ var _ngx_long_click_src_lib_ngx_long_click_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../ngx-long-click/src/lib/ngx-long-click.module */ "5d/s");
+/* harmony import */ var ngx_long_click__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-long-click */ "hY8p");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
@@ -58,10 +35,10 @@ class AppModule {
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__["AppComponent"]] });
 AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-            _ngx_long_click_src_lib_ngx_long_click_module__WEBPACK_IMPORTED_MODULE_2__["NgxLongClickModule"]
+            ngx_long_click__WEBPACK_IMPORTED_MODULE_2__["NgxLongClickModule"]
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__["AppComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-        _ngx_long_click_src_lib_ngx_long_click_module__WEBPACK_IMPORTED_MODULE_2__["NgxLongClickModule"]] }); })();
+        ngx_long_click__WEBPACK_IMPORTED_MODULE_2__["NgxLongClickModule"]] }); })();
 
 
 /***/ }),
@@ -77,7 +54,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _ngx_long_click_src_lib_long_click_directive__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../ngx-long-click/src/lib/long-click.directive */ "kt2x");
+/* harmony import */ var ngx_long_click__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-long-click */ "hY8p");
 
 
 const _c0 = function (a0) { return { background: a0 }; };
@@ -129,7 +106,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("clickDelayMs", 1000);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleMap"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](11, _c0, ctx.colors[ctx.btn3ColorIndex]));
-    } }, directives: [_ngx_long_click_src_lib_long_click_directive__WEBPACK_IMPORTED_MODULE_1__["LongClickDirective"]], styles: ["button[_ngcontent-%COMP%] {\n  padding: 10px;\n  margin-right: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxhcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0Esa0JBQUE7QUFDRiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJidXR0b24ge1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59XHJcbiJdfQ== */"] });
+    } }, directives: [ngx_long_click__WEBPACK_IMPORTED_MODULE_1__["LongClickDirective"]], styles: ["button[_ngcontent-%COMP%] {\n  padding: 10px;\n  margin-right: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxhcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0Esa0JBQUE7QUFDRiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJidXR0b24ge1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59XHJcbiJdfQ== */"] });
 
 
 /***/ }),
@@ -162,19 +139,21 @@ const environment = {
 
 /***/ }),
 
-/***/ "kt2x":
-/*!*****************************************************************!*\
-  !*** ./projects/ngx-long-click/src/lib/long-click.directive.ts ***!
-  \*****************************************************************/
-/*! exports provided: LongClickDirective */
+/***/ "hY8p":
+/*!********************************************************!*\
+  !*** ./dist/ngx-long-click/fesm2015/ngx-long-click.js ***!
+  \********************************************************/
+/*! exports provided: LongClickDirective, NgxLongClickModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LongClickDirective", function() { return LongClickDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgxLongClickModule", function() { return NgxLongClickModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+
 
 
 
@@ -198,6 +177,42 @@ class LongClickDirective {
 }
 LongClickDirective.ɵfac = function LongClickDirective_Factory(t) { return new (t || LongClickDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])); };
 LongClickDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: LongClickDirective, selectors: [["", "longClick", ""]], inputs: { clickDelayMs: "clickDelayMs" }, outputs: { longClick: "longClick" } });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](LongClickDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"],
+        args: [{
+                // tslint:disable-next-line:directive-selector
+                selector: '[longClick]'
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }]; }, { clickDelayMs: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], longClick: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"],
+            args: ['longClick']
+        }] }); })();
+
+class NgxLongClickModule {
+}
+NgxLongClickModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NgxLongClickModule });
+NgxLongClickModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NgxLongClickModule_Factory(t) { return new (t || NgxLongClickModule)(); }, imports: [[]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NgxLongClickModule, { declarations: [LongClickDirective], exports: [LongClickDirective] }); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NgxLongClickModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                declarations: [LongClickDirective],
+                imports: [],
+                exports: [LongClickDirective]
+            }]
+    }], null, null); })();
+
+/*
+ * Public API Surface of ngx-long-click
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
 
 
 /***/ }),
