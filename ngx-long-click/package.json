@@ -1,0 +1,38 @@
+{
+  "name": "ngx-long-click",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tylder/ngx-long-click/tree/master/projects/ngx-long-click"
+  },
+  "homepage": "https://github.com/Tylder/ngx-long-click/tree/master/projects/ngx-long-click",
+  "author": {
+    "name": "Daniel Lofgren",
+    "email": "lofgrendaniel@hotmail.com"
+  },
+  "keywords": [
+    "angular",
+    "long-click",
+    "long",
+    "click",
+    "press",
+    "event"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^11.1.2",
+    "@angular/core": "^11.1.2",
+    "rxjs": "^6.6.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "main": "bundles/ngx-long-click.umd.js",
+  "module": "fesm2015/ngx-long-click.js",
+  "es2015": "fesm2015/ngx-long-click.js",
+  "esm2015": "esm2015/ngx-long-click.js",
+  "fesm2015": "fesm2015/ngx-long-click.js",
+  "typings": "ngx-long-click.d.ts",
+  "metadata": "ngx-long-click.metadata.json",
+  "sideEffects": false
+}
