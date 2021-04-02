@@ -1,27 +1,77 @@
-# NgxLongClick
+# Ngx Long Click
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+Angular directive for detecting long clicks of an element in Angular 2 and up.
 
-## Development server
+It is as simple as:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```html
+<div longClick $event)"></div>
+```
 
-## Code scaffolding
+It internally uses `ResizeSensor` from [CSS Element Queries](https://github.com/marcj/css-element-queries).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Playground
 
-## Build
+[StackBlitz playground](https://stackblitz.com/edit/angular-resize-event-playground?file=src/app/app.component.html)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Using the library
 
-## Running unit tests
+Import the library in any Angular application by running:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+$ npm install ngx-long-click
+```
 
-## Running end-to-end tests
+and then from your Angular `AppModule`:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
 
-## Further help
+// Import the library module
+import {NgxLongClickModule} from './ngx-long-click.module';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+
+    // Specify NgxLongClickModule library as an import
+    NgxLongClickModule
+  ],
+  providers: [],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+```
+
+Once your library is imported, you can use its `longClick` directive in your Angular application:
+
+```html
+<div (longClick)="onLongClick($event)"></div>
+```
+
+```typescript
+import { Component } from '@angular/core';
+
+// Import the resized event model
+import { ResizedEvent } from 'angular-resize-event';
+
+@Component({...})
+class MyComponent {
+  width: number;
+  height: number;
+
+  onResized(event: ResizedEvent) {
+    this.width = event.newWidth;
+    this.height = event.newHeight;
+  }
+}
+```
+
+## License
+
+MIT © [Martin Volek](mailto:martin@vdolek.cz)
