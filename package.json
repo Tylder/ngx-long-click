@@ -1,17 +1,19 @@
 {
   "name": "ngx-long-click",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "npm run build:lib && npm run build:demo",
-    "build:lib": "ng build ng-simple-alert",
-    "build:demo": "ng build ng-simple-alert-showcase --base-href='https://kreuzerk.github.io/ng-simple-alert/'",
+    "build:lib": "ng build ngx-long-click --prod",
+    "build:demo": "ng build demo --prod --base-href='https://tylder.github.io/ngx-long-click/' && angular-cli-ghpages --branch gh-pages",
+    "publish:lib": "npm publish --dir=./dist/ngx-long-click",
+    "publish:demo": "npx angular-cli-ghpages --dir=./dist/demo --no-silent",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~11.1.2",
     "@angular/common": "~11.1.2",
@@ -21,6 +23,7 @@
     "@angular/platform-browser": "~11.1.2",
     "@angular/platform-browser-dynamic": "~11.1.2",
     "@angular/router": "~11.1.2",
+    "test-lib123123": "0.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
@@ -31,6 +34,7 @@
     "@angular/compiler-cli": "~11.1.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",

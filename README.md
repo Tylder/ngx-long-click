@@ -74,4 +74,4 @@ class MyComponent {
 
 ## License
 
-MIT © [Martin Volek](mailto:martin@vdolek.cz)
+MIT © [Daniel Lofgren](mailto:lofgrendaniel@hotmail.com)
