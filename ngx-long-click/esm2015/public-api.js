@@ -1,0 +1,6 @@
+/*
+ * Public API Surface of ngx-long-click
+ */
+export * from './lib/long-click.directive';
+export * from './lib/ngx-long-click.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL25neC1sb25nLWNsaWNrL3NyYy9wdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyw0QkFBNEIsQ0FBQztBQUMzQyxjQUFjLDZCQUE2QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBuZ3gtbG9uZy1jbGlja1xuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vbGliL2xvbmctY2xpY2suZGlyZWN0aXZlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL25neC1sb25nLWNsaWNrLm1vZHVsZSc7XG4iXX0=
